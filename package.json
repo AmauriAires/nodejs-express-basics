@@ -1,15 +1,36 @@
 {
-  "name": "nodejs-express-basics",
+  "name": "express-env-sample",
   "version": "1.0.0",
-  "description": "Learning Express - the basics",
-  "main": "app.js",
+  "description": "App example of express environment",
+  "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node index.js",
+    "devServer": "nodemon index.js",
+    "babel": "babel-node index.js",
+    "test": "mocha tests"
   },
-  "dependencies": {
-    "express": "*",
-    "body-parser": "*"
+  "engines": {
+    "node": "^4.2.0"
   },
   "author": "Amauri Bizerra",
-  "license": "ISC"
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "cors": "^2.8.4",
+    "dotenv": "^6.0.0",
+    "express": "^4.14.1",
+    "express-handlebars": "^3.0.0",
+    "knex": "^0.15.2",
+    "lodash": "^4.17.4",
+    "pg": "^7.4.3",
+    "request": "^2.87.0",
+    "request-promise": "^4.2.2"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0",
+    "mocha-logger": "^1.0.6",
+    "nodemon": "^1.18.3"
+  }
 }
